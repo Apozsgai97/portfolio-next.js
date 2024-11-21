@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {Montserrat} from "next/font/google"
+import { Navbar } from "@/features";
 
 const roboto = Montserrat({
   weight: ["400", "700"],
@@ -18,9 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.className}`}
-      >
+      <body className={`${roboto.className}`}>
+        <Navbar />
         {children}
       </body>
     </html>
