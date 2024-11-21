@@ -2,9 +2,12 @@ import Link from "next/link";
 
 export function Navbar() {
   return (
-    <nav className="fixed z-10 navbar bg-zinc-700 border-b-4 border-pink-200">
+    <nav className="fixed z-10 navbar bg-zinc-700 border-b-4 border-pink-200 text-neutral-50">
       <div className="flex-1">
-        <Link className=" hover:text-pink-200 btn-secondary text-lg p-1 font-bold" href=".">
+        <Link
+          className=" hover:text-pink-200 text-lg p-1 font-bold"
+          href="."
+        >
           Adrienn Pozsgai
         </Link>
       </div>

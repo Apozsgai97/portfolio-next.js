@@ -16,5 +16,5 @@ export default {
     },
   },
   plugins: [daisyui],
-  daisyui: { themes: ["luxury"] },
+  daisyui: { themes: [""] },
 } satisfies Config;
