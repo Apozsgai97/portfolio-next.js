@@ -7,7 +7,7 @@ export function AboutMeSection(){
      <h3 className="text-2xl font-bold p-36 border-2">Placeholder for video</h3>
      <div className="flex justify-evenly w-full">
        <article className="flex flex-col items-center p-4 gap-6 w-64">
-         <Accessibility color="#fbcfe8" size={150} />
+         <Accessibility color="#fbcfe8" size={100} />
          <h3 className="text-2xl font-bold">Accessibility</h3>
          <p className="text-center leading-8">
            Former special education teacher driven to make the web more
@@ -15,7 +15,7 @@ export function AboutMeSection(){
          </p>
        </article>
        <article className="flex flex-col items-center p-4 gap-6 w-64">
-         <SendToBack color="#fbcfe8" size={150} />
+         <SendToBack color="#fbcfe8" size={100} />
          <h3 className="text-2xl font-bold">Full-stack</h3>
          <p className="text-center leading-8">
            Full-stack developer skilled in Next.js, Express, PostgreSQL, and
@@ -23,7 +23,7 @@ export function AboutMeSection(){
          </p>
        </article>
        <article className="flex flex-col items-center p-4 gap-6 w-64">
-         <Component color="#fbcfe8" size={150} />
+         <Component color="#fbcfe8" size={100} />
          <h3 className="text-2xl font-bold">UI</h3>
          <p className="text-center leading-8">
            Passionate about designing user interfaces that are intuitive,
@@ -31,7 +31,7 @@ export function AboutMeSection(){
          </p>
        </article>
        <article className="flex flex-col items-center p-4 gap-6 w-64">
-         <NotebookPen color="#fbcfe8" size={150} />
+         <NotebookPen color="#fbcfe8" size={100} />
          <h3 className="text-2xl font-bold">Planing</h3>
          <p className="text-center leading-8">
            Planning and organizing are as essential in web development as in
