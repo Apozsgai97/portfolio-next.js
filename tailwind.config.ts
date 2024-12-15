@@ -10,6 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        zincPink: "#4b3f47",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
