@@ -24,7 +24,7 @@ export function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/" className=" hover:text-pink-200">
+            <Link href="/contact" className=" hover:text-pink-200">
               Contact
             </Link>
           </li>

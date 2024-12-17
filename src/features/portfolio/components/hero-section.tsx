@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -29,9 +30,12 @@ export function HeroSection() {
           </p>
         </div>
         <div className="flex lg:justify-end mt-5">
-          <button className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800">
+          <Link
+            href="/contact"
+            className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800"
+          >
             Connect with me!
-          </button>
+          </Link>
         </div>
       </div>
     </section>
