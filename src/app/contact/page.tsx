@@ -4,14 +4,14 @@ export default function ContactPage() {
   return (
     <section className="pt-28 text-neutral-50 flex flex-col justify-center items-center h-full">
       <h1 className="font-extrabold text-4xl mb-8 text-center">Contact Me</h1>
-      <div className="w-full">
+      <div className="w-full md:w-8/12 md:flex md:pt-8">
         <article className="w-full flex flex-col justify-center items-center">
           <h2 className="font-bold text-2xl mb-8 text-center">
             Send a message
           </h2>
           <form
             action=""
-            className="w-full md:w-4/12 px-4 flex flex-col gap-12"
+            className="w-full px-4 flex flex-col gap-12"
           >
             <label className="input input-bordered flex items-center gap-2 rounded-none">
               Name
@@ -40,8 +40,8 @@ export default function ContactPage() {
             </div>
           </form>
         </article>
-        <article className="w-full flex flex-col justify-center items-center leading-10">
-          <h2 className="font-bold text-2xl mb-8 mt-12 text-center">
+        <article className="w-full flex flex-col items-center leading-10">
+          <h2 className="font-bold text-2xl mb-8 mt-12 md:mt-0 text-center">
             Contact Details
           </h2>
           <h3 className="text-xl font-semibold">Email</h3>
