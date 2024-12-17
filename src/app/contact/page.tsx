@@ -1,6 +1,8 @@
+import { Facebook, Github, Linkedin } from "lucide-react";
+
 export default function ContactPage() {
   return (
-    <section className="pt-20 text-neutral-50 flex flex-col justify-center items-center h-full">
+    <section className="pt-28 text-neutral-50 flex flex-col justify-center items-center h-full">
       <h1 className="font-extrabold text-4xl mb-8 text-center">Contact Me</h1>
       <div className="w-full">
         <article className="w-full flex flex-col justify-center items-center">
@@ -38,10 +40,18 @@ export default function ContactPage() {
             </div>
           </form>
         </article>
-        <article className="w-full flex flex-col justify-center items-center">
-          <h2 className="font-bold text-2xl mb-8 text-center">
+        <article className="w-full flex flex-col justify-center items-center leading-10">
+          <h2 className="font-bold text-2xl mb-8 mt-12 text-center">
             Contact Details
           </h2>
+          <h3 className="text-xl font-semibold">Email</h3>
+          <p>apozsgai97@gmail.com</p>
+          <h3 className="text-xl font-semibold py-3">Socials</h3>
+          <div className="flex gap-6 pb-8">
+            <Github />
+            <Linkedin />
+            <Facebook />
+          </div>
         </article>
       </div>
     </section>
