@@ -1,7 +1,10 @@
 import Image from "next/image";
 export function ProjectsSection() {
   return (
-    <section className="border-b-4 border-pink-200 text-neutral-50 pb-12">
+    <section
+      className="border-b-4 border-pink-200 text-neutral-50 pb-12"
+      id="projects"
+    >
       <h2 className="text-4xl font-bold p-12 text-center">My Projects</h2>
       <div className="flex flex-col items-center gap-10">
         <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl md:border-2 md:border-pink-200 rounded-none md:px-4">
