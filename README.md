@@ -21,9 +21,10 @@ Ensure you have the following installed:
 
 1. **Clone the Repository**:
 
-   ```bash
-   git clone https://github.com/Apozsgai97/portfolio-next.js.git
-   cd portfolio-next.js
+```bash
+git clone https://github.com/Apozsgai97/portfolio-next.js.git
+cd portfolio-next.js
+```
 
 2. **Install dependencies**:
 
@@ -31,7 +32,7 @@ Ensure you have the following installed:
 npm i
 ```
 
-2. **Run the development**:
+3. **Run the development**:
 
 ```bash
 npm run dev
