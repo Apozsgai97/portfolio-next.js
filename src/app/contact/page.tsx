@@ -9,10 +9,7 @@ export default function ContactPage() {
           <h2 className="font-bold text-2xl mb-8 text-center">
             Send a message
           </h2>
-          <form
-            action=""
-            className="w-full px-4 flex flex-col gap-12"
-          >
+          <form action="" className="w-full px-4 flex flex-col gap-12">
             <label className="input input-bordered flex items-center gap-2 rounded-none">
               Name
               <input
@@ -48,9 +45,27 @@ export default function ContactPage() {
           <p>apozsgai97@gmail.com</p>
           <h3 className="text-xl font-semibold py-3">Socials</h3>
           <div className="flex gap-6 pb-8">
-            <Github />
-            <Linkedin />
-            <Facebook />
+            <a
+              href="https://github.com/Apozsgai97"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/adrienn-pozsgai-4594232a8/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin />
+            </a>
+            <a
+              href="https://www.facebook.com/adrienn.pozsgai.7/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Facebook />
+            </a>
           </div>
         </article>
       </div>
