@@ -25,9 +25,14 @@ export function ProjectsSection() {
               filtering by name, skill, or education.
             </p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4">
-                Check out on GitHub
-              </button>
+              <a
+                href="https://github.com/salt-community/talent-app-v2"
+                className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
             </div>
           </div>
         </article>
@@ -50,9 +55,14 @@ export function ProjectsSection() {
               customer satisfaction.
             </p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4">
-                Check out on GitHub
-              </button>
+              <a
+                href="https://github.com/Apozsgai97/includio"
+                className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
             </div>
           </div>
         </article>
@@ -75,9 +85,14 @@ export function ProjectsSection() {
               conversations.
             </p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4">
-                Check out on GitHub
-              </button>
+              <a
+                href="https://github.com/Infinite-Loopers2024/slow-chat-final"
+                className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
             </div>
           </div>
         </article>
@@ -98,9 +113,14 @@ export function ProjectsSection() {
               database for tracking votes and representatives.
             </p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4">
-                Check out on GitHub
-              </button>
+              <a
+                href="https://github.com/Apozsgai97/voting-app"
+                className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
             </div>
           </div>
         </article>
