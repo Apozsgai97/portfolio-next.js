@@ -9,7 +9,7 @@ export function HeroSection() {
         width={500}
         height={700}
         alt="Picture of the developer, Adrienn Pozsgai"
-        className="hidden lg:block"
+        className="h-96 object-cover md:h-auto"
       />
       <div className="lg:px-44 lg:text-left p-12 lg:py-0 text-neutral-50">
         <h1 className="font-extrabold text-6xl lg:text-8xl mb-6 lg:w-96">
