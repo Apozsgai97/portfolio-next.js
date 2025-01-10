@@ -1,6 +1,26 @@
+"use client"
+
 import { Facebook, Github, Linkedin } from "lucide-react";
+import { sendEmail } from "@/features";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [modalMessage, setModalMessage] = useState("");
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target as HTMLFormElement);
+    try {
+      await sendEmail(formData);
+      setModalMessage("Email sent successfully!");
+    } catch (error) {
+      setModalMessage(`Failed to send email. Please try again. ${error}`);
+    }
+
+    setModalOpen(true);
+  };
   return (
     <section className="pt-28 text-neutral-50 flex flex-col justify-center items-center h-full">
       <h1 className="font-extrabold text-4xl mb-8 text-center">Contact Me</h1>
@@ -9,33 +29,64 @@ export default function ContactPage() {
           <h2 className="font-bold text-2xl mb-8 text-center">
             Send a message
           </h2>
-          <form action="" className="w-full px-4 flex flex-col gap-12">
+          <form
+            action={sendEmail}
+            className="w-full px-4 flex flex-col gap-12"
+            onSubmit={handleSubmit}
+          >
             <label className="input input-bordered flex items-center gap-2 rounded-none">
               Name
               <input
                 type="text"
+                id="name"
+                name="name"
                 className="grow"
                 placeholder="Adrienn Pozsgai"
+                required
               />
             </label>
             <label className="input input-bordered flex items-center gap-2 rounded-none">
               Email
               <input
-                type="text"
+                type="email"
+                id="email"
+                name="email"
                 className="grow"
                 placeholder="adrienn.pozsgai@gmail.com"
+                required
               />
             </label>
             <textarea
               className="textarea textarea-bordered rounded-none"
+              id="message"
+              name="message"
               placeholder="Message"
+              required
             ></textarea>
             <div className="flex justify-center items-center">
-              <button className="btn btn-primary rounded-none bg-pink-200 text-zinc-800 hover:bg-pink-100 w-40">
+              <button
+                className="btn btn-primary rounded-none bg-pink-200 text-zinc-800 hover:bg-pink-100 w-40"
+                type="submit"
+              >
                 Send
               </button>
             </div>
           </form>
+          {modalOpen && (
+            <dialog id="my_modal_1" className="modal" open>
+              <div className="modal-box bg-zinc-900 rounded-none">
+                <h3 className="font-bold text-lg">{modalMessage}</h3>
+                <div className="modal-action">
+                  <button
+                    className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800"
+                    onClick={() => setModalOpen(false)}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </dialog>
+          )}
         </article>
         <article className="w-full flex flex-col items-center leading-10">
           <h2 className="font-bold text-2xl mb-8 mt-12 md:mt-0 text-center">
