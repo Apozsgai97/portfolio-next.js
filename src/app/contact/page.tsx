@@ -7,9 +7,11 @@ import { useState } from "react";
 export default function ContactPage() {
   const [modalMessage, setModalMessage] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
+  const [loading, setloading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setloading(true);
 
     const formData = new FormData(e.target as HTMLFormElement);
     try {
@@ -20,6 +22,7 @@ export default function ContactPage() {
     }
 
     setModalOpen(true);
+    setloading(false);
   };
   return (
     <section className="pt-28 text-neutral-50 flex flex-col justify-center items-center h-full">
@@ -65,10 +68,11 @@ export default function ContactPage() {
             ></textarea>
             <div className="flex justify-center items-center">
               <button
-                className="btn btn-primary rounded-none bg-pink-200 text-zinc-800 hover:bg-pink-100 w-40"
+                className="btn btn-primary rounded-none bg-pink-200 text-zinc-800 hover:bg-pink-100 w-40 disabled:bg-white disabled:text-zinc-800"
                 type="submit"
+                disabled={loading}
               >
-                Send
+                {loading ? "Sending..." : "Send"}
               </button>
             </div>
           </form>
