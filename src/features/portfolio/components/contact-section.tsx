@@ -25,7 +25,7 @@ export function ContactSection() {
      setloading(false);
    };
    return (
-     <section className="py-16 text-neutral-50 flex flex-col justify-center items-center h-full">
+     <section className="py-16 text-neutral-50 flex flex-col justify-center items-center h-full" id="contact">
        <h1 className="font-extrabold text-4xl mb-8 text-center">Contact Me</h1>
        <div className="w-full md:w-8/12 md:flex md:pt-8">
          <article className="w-full flex flex-col justify-center items-center">

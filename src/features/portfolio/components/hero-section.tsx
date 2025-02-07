@@ -31,7 +31,7 @@ export function HeroSection() {
         </div>
         <div className="flex lg:justify-end mt-5">
           <Link
-            href="/contact"
+            href="/#contact"
             className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800"
           >
             Connect with me!
