@@ -2,7 +2,7 @@ import Image from "next/image";
 export function ProjectsSection() {
   return (
     <section
-      className="border-b-4 border-pink-200 text-neutral-50 pt-16 pb-16"
+      className="border-b-2 border-pink-200 text-neutral-50 pt-16 pb-16"
       id="projects"
     >
       <h2 className="text-4xl font-bold pb-16 text-center">My Projects</h2>

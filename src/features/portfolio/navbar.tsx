@@ -16,7 +16,7 @@ export function Navbar() {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -25,7 +25,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed z-10 navbar bg-zinc-800 border-b-4 border-pink-200 text-neutral-50 flex justify-center md:justify-end md:pr-8">
+    <nav className="fixed z-10 navbar bg-zinc-800 border-b-2 border-pink-200 text-neutral-50 flex justify-center md:justify-end md:pr-8">
       <div className="flex item-center">
         <ul className="flex items-center gap-8 px-1 text-primary">
           <li className="px-2">
