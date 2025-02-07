@@ -6,8 +6,8 @@ export function Navbar() {
       <div className="flex item-center">
         <ul className="flex items-center gap-8 px-1 text-primary">
           <li className="px-2">
-            <Link href="/" className=" hover:text-pink-200">
-              Home
+            <Link href="/#about" className=" hover:text-pink-200">
+              About me
             </Link>
           </li>
           <li>
