@@ -2,10 +2,10 @@ import Image from "next/image";
 export function ProjectsSection() {
   return (
     <section
-      className="border-b-4 border-pink-200 text-neutral-50 pb-12"
+      className="border-b-4 border-pink-200 text-neutral-50 pt-16 pb-12"
       id="projects"
     >
-      <h2 className="text-4xl font-bold p-12 text-center">My Projects</h2>
+      <h2 className="text-4xl font-bold pb-16 text-center">My Projects</h2>
       <div className="flex flex-col items-center gap-10">
         <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl md:border-2 md:border-pink-200 rounded-none md:px-4">
           <figure>
@@ -106,7 +106,7 @@ export function ProjectsSection() {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl">Voting app</h2>
+            <h2 className="card-title text-2xl">Voting App</h2>
             <p className="max-w-lg text-base leading-7">
               An interactive application for organizing and managing elections,
               displaying results, and ensuring transparency with a robust
