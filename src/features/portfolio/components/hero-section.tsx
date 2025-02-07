@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="flex flex-col lg:flex-row justify-between items-center bg-zinc-800 border-b-4 border-pink-200">
+    <article className="flex flex-col lg:flex-row justify-between items-center bg-zinc-800 border-b-4 border-pink-200">
       <Image
         src="/profile.png"
         width={500}
@@ -38,6 +38,6 @@ export function HeroSection() {
           </Link>
         </div>
       </div>
-    </section>
+    </article>
   );
 }
