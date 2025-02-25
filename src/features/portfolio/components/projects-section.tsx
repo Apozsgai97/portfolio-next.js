@@ -10,7 +10,7 @@ export function ProjectsSection() {
         <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl md:border-2 md:border-pink-200 rounded-none md:px-4">
           <figure>
             <Image
-              src="/includio.png"
+              src="/talent-app.png"
               width={500}
               height={300}
               alt="Picture of the developer, Adrienn Pozsgai"
