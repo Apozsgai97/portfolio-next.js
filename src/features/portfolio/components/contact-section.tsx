@@ -1,7 +1,7 @@
 "use client";
 
 import { Facebook, Github, Linkedin } from "lucide-react";
-import { sendEmail } from "@/features";
+import emailjs from '@emailjs/browser';
 import { useState } from "react";
 
 export function ContactSection() {
@@ -9,21 +9,27 @@ export function ContactSection() {
    const [modalOpen, setModalOpen] = useState(false);
    const [loading, setloading] = useState(false);
 
-   const handleSubmit = async (e: React.FormEvent) => {
-     e.preventDefault();
-     setloading(true);
+const handleSubmit = async (e: React.FormEvent) => {
+e.preventDefault();
+setloading(true);
 
-     const formData = new FormData(e.target as HTMLFormElement);
-     try {
-       await sendEmail(formData);
-       setModalMessage("Email sent successfully!");
-     } catch (error) {
-       setModalMessage(`Failed to send email. Please try again. ${error}`);
-     }
+const form = e.target as HTMLFormElement;
+try {
+    await emailjs.sendForm(
+    '{{YOUR_SERVICE_ID}}',
+    '{{YOUR_TEMPLATE_ID}}',
+    form,
+    '{{YOUR_PUBLIC_KEY}}'
+    );
+    setModalMessage("Email sent successfully!");
+    form.reset();
+} catch (error) {
+    setModalMessage(`Failed to send email. Please try again. ${error}`);
+}
 
-     setModalOpen(true);
-     setloading(false);
-   };
+setModalOpen(true);
+setloading(false);
+};
    return (
      <section className="py-16 text-neutral-50 flex flex-col justify-center items-center h-full" id="contact">
        <h1 className="font-extrabold text-4xl mb-8 text-center">Contact Me</h1>
@@ -32,10 +38,9 @@ export function ContactSection() {
            <h2 className="font-bold text-2xl mb-8 text-center">
              Send a message
            </h2>
-           <form
-             action={sendEmail}
-             className="w-full px-4 flex flex-col gap-12"
-             onSubmit={handleSubmit}
+        <form
+        className="w-full px-4 flex flex-col gap-12"
+        onSubmit={handleSubmit}
            >
              <label className="input input-bordered flex items-center gap-2 rounded-none">
                Name
