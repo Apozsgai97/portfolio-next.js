@@ -25,14 +25,14 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed z-10 navbar bg-zinc-800 border-b-2 border-pink-200 text-neutral-50 flex justify-center md:justify-end md:pr-8">
+    <nav className="fixed z-10 navbar bg-zinc-800 border-b-2 border-[#7A5C65] text-neutral-50 flex justify-center md:justify-end md:pr-8">
       <div className="flex item-center">
         <ul className="flex items-center gap-8 px-1 text-primary">
           <li className="px-2">
             <Link
               href="/#about"
-              className={`hover:text-pink-200 ${
-                activeSection === "about" ? "border-b border-pink-200" : ""
+              className={`hover:text-[#B28A94] ${
+                activeSection === "about" ? "border-b-2 border-[#7A5C65]" : ""
               }`}
             >
               About me
@@ -41,8 +41,10 @@ export function Navbar() {
           <li>
             <Link
               href="/#projects"
-              className={`hover:text-pink-200 ${
-                activeSection === "projects" ? "border-b border-pink-200" : ""
+              className={`hover:text-[#B28A94] ${
+                activeSection === "projects"
+                  ? "border-b-2 border-[#7A5C65]"
+                  : ""
               }`}
             >
               Projects
@@ -51,8 +53,8 @@ export function Navbar() {
           <li>
             <Link
               href="/#contact"
-              className={`hover:text-pink-200 ${
-                activeSection === "contact" ? "border-b border-pink-200" : ""
+              className={`hover:text-[#B28A94] ${
+                activeSection === "contact" ? "border-b-2 border-[#7A5C65]" : ""
               }`}
             >
               Contact

@@ -2,12 +2,12 @@ import Image from "next/image";
 export function ProjectsSection() {
   return (
     <section
-      className="border-b-2 border-pink-200 text-neutral-50 pt-16 pb-16"
+      className="border-b-2 border-[#7A5C65] text-neutral-50 pt-16 pb-16 bg-[#7A5C65]"
       id="projects"
     >
       <h2 className="text-4xl font-bold pb-16 text-center">My Projects</h2>
-      <div className="flex flex-col items-center gap-14">
-        <article className="card card-compact lg:card-side bg-base-100 w-screen md:w-10/12 lg:w-8/12 shadow-xl  md:border-2 md:border-pink-200 rounded-none lg:pr-2">
+      <div className="flex flex-col items-center gap-24">
+        <article className="card card-compact lg:card-side w-screen md:w-10/12 lg:w-8/12  shadow-zinc-900 shadow-2xl bg-zinc-800 rounded-none lg:pr-2">
           <figure className="lg:w-[500px] md:h-[300px]">
             <Image
               src="/talent-app.png"
@@ -29,7 +29,7 @@ export function ProjectsSection() {
             <div className="card-actions justify-end">
               <a
                 href="https://github.com/salt-community/talent-app-v2"
-                className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4"
+                className="btn btn-primary rounded-none hover:bg-[#7A5C65] mt-4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -38,7 +38,7 @@ export function ProjectsSection() {
             </div>
           </div>
         </article>
-        <article className="card card-compact lg:card-side bg-base-100 w-screen  md:w-10/12 lg:w-8/12 shadow-xl  md:border-2 md:border-pink-200 rounded-none lg:pr-2">
+        <article className="card card-compact lg:card-side w-screen  md:w-10/12 lg:w-8/12  shadow-zinc-900 shadow-2xl rounded-none lg:pr-2 bg-zinc-800">
           <figure className="lg:w-[500px] md:h-[300px]">
             <Image
               src="/includio.png"
@@ -60,7 +60,7 @@ export function ProjectsSection() {
             <div className="card-actions justify-end">
               <a
                 href="https://github.com/Apozsgai97/includio"
-                className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4"
+                className="btn btn-primary rounded-none hover:bg-[#7A5C65] mt-4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -69,7 +69,7 @@ export function ProjectsSection() {
             </div>
           </div>
         </article>
-        <article className="card card-compact lg:card-side bg-base-100 w-screen  md:w-10/12 lg:w-8/12 shadow-xl  md:border-2 md:border-pink-200 rounded-none lg:pr-2">
+        <article className="card card-compact lg:card-side w-screen  md:w-10/12 lg:w-8/12  shadow-zinc-900 shadow-2xl  bg-zinc-800  rounded-none lg:pr-2">
           <figure className="lg:w-[500px] md:h-[300px]">
             <Image
               src="/slow-chat.png"
@@ -91,7 +91,7 @@ export function ProjectsSection() {
             <div className="card-actions justify-end">
               <a
                 href="https://github.com/Infinite-Loopers2024/slow-chat-final"
-                className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4"
+                className="btn btn-primary rounded-none hover:bg-[#7A5C65] mt-4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -100,7 +100,7 @@ export function ProjectsSection() {
             </div>
           </div>
         </article>
-        <article className="card card-compact lg:card-side bg-base-100 w-screen  md:w-10/12 lg:w-8/12 shadow-xl  md:border-2 md:border-pink-200 rounded-none lg:pr-2">
+        <article className="card card-compact lg:card-side w-screen  md:w-10/12 lg:w-8/12 shadow-zinc-900 shadow-2xl  bg-zinc-800 rounded-none lg:pr-2">
           <figure className="lg:w-[500px] md:h-[300px]">
             <Image
               src="/voting-app.png"
@@ -120,7 +120,7 @@ export function ProjectsSection() {
             <div className="card-actions justify-end">
               <a
                 href="https://github.com/Apozsgai97/voting-app"
-                className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800 mt-4"
+                className="btn btn-primary rounded-none hover:bg-[#7A5C65] mt-4"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${roboto.className} bg-zinc-800`}>
         <Navbar />
         {children}
-        <footer className="footer footer-center border-t-2 border-pink-200 p-4 text-neutral-50">
+        <footer className="footer footer-center border-t-2 border-[#7A5C65] p-4 text-neutral-50">
           <aside>
             <p>
               Copyright © {new Date().getFullYear()} - All right reserved by

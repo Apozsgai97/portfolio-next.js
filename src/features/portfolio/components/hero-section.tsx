@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <article className="flex flex-col lg:flex-row justify-between items-center bg-zinc-800 border-b-2 border-pink-200">
+    <article className="flex flex-col lg:flex-row justify-between items-center bg-zinc-800 border-b-2 border-[#7A5C65]">
       <Image
         src="/profile.png"
         width={500}
@@ -32,7 +32,7 @@ export function HeroSection() {
         <div className="flex lg:justify-end mt-5">
           <Link
             href="/#contact"
-            className="btn btn-primary rounded-none hover:bg-pink-200 hover:text-zinc-800"
+            className="btn btn-primary rounded-none hover:bg-[#7A5C65]"
           >
             Connect with me!
           </Link>

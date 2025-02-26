@@ -79,7 +79,7 @@ setloading(false);
 
              <div className="flex justify-center items-center">
                <button
-                 className="btn btn-primary rounded-none bg-pink-200 text-zinc-800 hover:bg-pink-100 w-40 disabled:bg-white disabled:text-zinc-800"
+                 className="btn btn-primary rounded-none border-none bg-[#7A5C65] text-neutral-50 hover:bg-[#5C434B] w-40 disabled:bg-white disabled:text-zinc-800"
                  type="submit"
                  disabled={loading}
                >
