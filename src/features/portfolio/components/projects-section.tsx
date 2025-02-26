@@ -7,7 +7,7 @@ export function ProjectsSection() {
     >
       <h2 className="text-4xl font-bold pb-16 text-center">My Projects</h2>
       <div className="flex flex-col items-center gap-14">
-        <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl md:border-2 md:border-pink-200 rounded-none md:px-4 md:p-2">
+        <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl md:border-2 md:border-pink-200 rounded-none md:pr-2">
           <figure className="w-[500px] h-[300px] ">
             <Image
               src="/talent-app.png"
@@ -38,7 +38,7 @@ export function ProjectsSection() {
             </div>
           </div>
         </article>
-        <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl md:border-2 md:border-pink-200 rounded-none md:px-4 md:p-2">
+        <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl md:border-2 md:border-pink-200 rounded-none md:pr-2">
           <figure className="w-[500px] h-[300px]">
             <Image
               src="/includio.png"
@@ -69,7 +69,7 @@ export function ProjectsSection() {
             </div>
           </div>
         </article>
-        <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl  md:border-2 md:border-pink-200 rounded-none md:px-4 md:p-2">
+        <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl  md:border-2 md:border-pink-200 rounded-none md:pr-2">
           <figure className="w-[500px] h-[300px]">
             <Image
               src="/slow-chat.png"
@@ -100,7 +100,7 @@ export function ProjectsSection() {
             </div>
           </div>
         </article>
-        <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl  md:border-2 md:border-pink-200 rounded-none md:px-4 md:p-2">
+        <article className="card card-compact md:card-side bg-base-100 w-96 md:w-8/12 shadow-xl  md:border-2 md:border-pink-200 rounded-none md:pr-2">
           <figure className="w-[500px] h-[300px]">
             <Image
               src="/voting-app.png"
