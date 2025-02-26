@@ -16,10 +16,10 @@ setloading(true);
 const form = e.target as HTMLFormElement;
 try {
     await emailjs.sendForm(
-    '{{YOUR_SERVICE_ID}}',
-    '{{YOUR_TEMPLATE_ID}}',
-    form,
-    '{{YOUR_PUBLIC_KEY}}'
+      "service_o0bta0i",
+      "template_skswfcb",
+      form,
+      "1WByYneOlbtV_Wa9V"
     );
     setModalMessage("Email sent successfully!");
     form.reset();
@@ -31,39 +31,44 @@ setModalOpen(true);
 setloading(false);
 };
    return (
-     <section className="py-16 text-neutral-50 flex flex-col justify-center items-center h-full" id="contact">
+     <section
+       className="py-16 text-neutral-50 flex flex-col justify-center items-center h-full"
+       id="contact"
+     >
        <h1 className="font-extrabold text-4xl mb-8 text-center">Contact Me</h1>
        <div className="w-full md:w-8/12 md:flex md:pt-8">
          <article className="w-full flex flex-col justify-center items-center">
            <h2 className="font-bold text-2xl mb-8 text-center">
              Send a message
            </h2>
-        <form
-        className="w-full px-4 flex flex-col gap-12"
-        onSubmit={handleSubmit}
+           <form
+             className="w-full px-4 flex flex-col gap-12"
+             onSubmit={handleSubmit}
            >
              <label className="input input-bordered flex items-center gap-2 rounded-none">
                Name
                <input
                  type="text"
                  id="name"
-                 name="name"
+                 name="from_name"
                  className="grow"
                  placeholder="Adrienn Pozsgai"
                  required
                />
              </label>
+
              <label className="input input-bordered flex items-center gap-2 rounded-none">
                Email
                <input
                  type="email"
                  id="email"
-                 name="email"
+                 name="from_email"
                  className="grow"
                  placeholder="adrienn.pozsgai@gmail.com"
                  required
                />
              </label>
+
              <textarea
                className="textarea textarea-bordered rounded-none"
                id="message"
@@ -71,6 +76,7 @@ setloading(false);
                placeholder="Message"
                required
              ></textarea>
+
              <div className="flex justify-center items-center">
                <button
                  className="btn btn-primary rounded-none bg-pink-200 text-zinc-800 hover:bg-pink-100 w-40 disabled:bg-white disabled:text-zinc-800"
@@ -81,6 +87,7 @@ setloading(false);
                </button>
              </div>
            </form>
+
            {modalOpen && (
              <dialog id="my_modal_1" className="modal" open>
                <div className="modal-box bg-zinc-900 rounded-none">
