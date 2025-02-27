@@ -12,21 +12,26 @@ export function HeroSection() {
         className="h-96 object-cover md:h-auto"
       />
       <div className="lg:px-44 lg:text-left p-12 lg:py-0 text-neutral-50">
-        <h1 className="font-extrabold text-6xl lg:text-8xl mb-6 lg:w-96">
-          My <span>Portfolio</span>
+        <h1 className="font-extrabold text-6xl space-y-7 lg:text-8xl mb-12">
+          Full-Stack <div className="pt-4">Developer</div>
         </h1>
         <div>
-          <p className="leading-8 lg:leading-10 mb-4">
-            My name is <span className="font-bold">Adrienn Pozsgai.</span>
+          <p className="leading-8 lg:leading-2 mb-4">
+            I’m <span className="font-bold">Adrienn Pozsgai</span>, a Full-Stack
+            JavaScript Developer based in Stockholm, Sweden. I specialize in
+            building accessible, user-friendly applications that make a real
+            difference.
           </p>
-          <p className="leading-8 lg:leading-10 mb-4">
-            I am a{" "}
-            <span className="font-bold">full-stack JavaScript developer</span>{" "}
-            dedicated to building accessible and user-friendly web applications.
+          <p className="leading-8 lg:leading-2 mb-4">
+            Before transitioning into tech, I worked in
+            <span className="font-bold"> special education</span>, where I
+            developed strong problem-solving skills, adaptability, and a deep
+            understanding of user needs.
           </p>
-          <p className="leading-8 lg:leading-10 mb-4">
-            My passion lies in creating inclusive digital experiences that
-            everyone can enjoy.
+          <p className="leading-8 lg:leading-2 mb-4">
+           I’m always eager to learn and improve—whether it’s
+            exploring new technologies, refining user experiences, or enhancing
+            accessibility in digital spaces.
           </p>
         </div>
         <div className="flex lg:justify-end mt-5">
