@@ -11,7 +11,7 @@ export function HeroSection() {
         alt="Picture of the developer, Adrienn Pozsgai"
         className="h-96 object-cover md:h-auto"
       />
-      <div className="lg:px-44 lg:text-left p-12 lg:py-0 text-neutral-50">
+      <div className="lg:px-44 lg:text-left p-4 lg:py-0 text-neutral-50">
         <h1 className="font-extrabold text-6xl space-y-7 lg:text-8xl mb-12">
           Full-Stack <div className="pt-4">Developer</div>
         </h1>
